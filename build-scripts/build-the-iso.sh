@@ -113,6 +113,11 @@ tput sgr0
 echo "##################################################################"
 echo
 
+  # Let us set the desktop
+  # First letter of the desktop is lowercase
+
+  desktop="xfce4"
+
   arcaneVersion='v26.02.03.01'
 
   isoLabel='arcane-'$kiroVersion'-x86_64.iso'
@@ -121,6 +126,23 @@ echo
   archisoRequiredVersion="archiso 84-1"
   buildFolder=$HOME"/arcane-build"
   outFolder=$HOME"/arcane-out"
+
+  # If you want to add packages from the chaotics-aur repo then
+  # change the variable to true and add the package names
+  # that are hosted on chaotics-aur in the packages.x86_64 at the bottom
+
+echo "##################################################################"
+tput setaf 2
+echo "Overview"
+tput sgr0
+echo "##################################################################"
+echo "Building the desktop                  : "$desktop
+echo "Building version                      : "$arcaneVersion
+echo "ISO Label                             : "$isoLabel
+echo "Build folder                          : "$buildFolder
+echo "Out folder                            : "$outFolder
+echo "##################################################################"
+echo
 
 echo
 echo "##################################################################"
