@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="arcane-linux"
-iso_label="arcane-linux-v26.02.03.01"
+iso_label="arcane-v26.02.03.01"
 iso_publisher="Eldritch Logic, LLC. <https://eldritchlogic.com>"
 iso_application="Arcane Linux Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
